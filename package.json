@@ -1,0 +1,14 @@
+{
+  "name": "fortnite-chest-counter",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Independent open-source manual Fortnite chest counter",
+  "license": "MIT",
+  "type": "commonjs",
+  "scripts": {
+    "test": "node --test counter.test.cjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

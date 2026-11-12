@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="An open-source manual Fortnite chest counter. Local saving, keyboard shortcuts and JSON export. No Epic login, game access or analytics."
+    />
+    <title>Fortnite Chest Counter · Open Source</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="counter.js" defer></script>
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <p class="eyebrow">LOOTCOUNTER / OPEN SOURCE</p>
+      <h1>Fortnite Chest Counter</h1>
+      <p class="intro">
+        One tap per chest. A small manual counter you can read, run locally and
+        change yourself.
+      </p>
+      <section class="tool" aria-label="Manual chest counter">
+        <p class="label">CHESTS RECORDED</p>
+        <output id="count" aria-live="polite" aria-label="Chests recorded"
+          >0</output
+        >
+        <div class="controls">
+          <button id="subtract" aria-label="Subtract one chest">−1</button
+          ><button id="add" class="primary">Add a chest +1</button>
+        </div>
+        <div class="actions">
+          <button id="undo" disabled>Undo</button
+          ><button id="export">Export JSON</button
+          ><button id="reset">Reset</button>
+        </div>
+        <form id="starting-form">
+          <label for="start-count">Set a known starting count</label>
+          <div class="starting">
+            <input
+              id="start-count"
+              type="number"
+              inputmode="numeric"
+              min="0"
+              max="10000000"
+              step="1"
+              required
+              value="0"
+            /><button id="set" type="submit">Set count</button>
+          </div>
+        </form>
+        <p id="status" role="status">
+          Saved locally when browser storage is available.
+        </p>
+        <button id="original" hidden>Download original saved data</button>
+      </section>
+      <section>
+        <h2>How to use this counter</h2>
+        <p>
+          Click +1 after an opening. Space adds one and Enter subtracts one when
+          focus is outside controls. Shortcuts only work while this page is
+          focused; they do not run inside Fortnite.
+        </p>
+        <p>
+          Choose a clear starting point. Undo reverses your latest count change.
+          Export creates a readable JSON backup; this version has no import
+          function. The record stays in this browser, so keep one editing tab
+          open and export before clearing site data or switching devices.
+        </p>
+        <h2>Inspect the source</h2>
+        <p>
+          This is an independent, MIT-licensed browser counter with no packages,
+          accounts, trackers or background network requests. It does not connect
+          to Epic, detect opened chests, locate tokens or automate gameplay.
+        </p>
+        <p>
+          <a href="https://github.com/ljc-zds/fortnite-chest-counter"
+            >Source code and download instructions on GitHub</a
+          >
+        </p>
+        <p>
+          For shared squad rooms and dated session logs, use the
+          <a href="https://lootcounter.com/">hosted LootCounter tools</a>. This
+          standalone counter has its own storage and does not sync with the
+          hosted site.
+        </p>
+      </section>
+      <footer>
+        Independent fan-made tool. Not affiliated with or endorsed by Epic
+        Games. Fortnite is a trademark of Epic Games.
+      </footer>
+    </main>
+  </body>
+</html>
