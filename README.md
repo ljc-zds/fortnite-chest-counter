@@ -1,6 +1,6 @@
 # Fortnite Chest Counter
 
-A small, open-source **manual Fortnite chest counter** from [LootCounter](https://lootcounter.com/). Run it locally, inspect the code, or adapt it under the MIT license. No Epic login, extension, game files, API keys, telemetry or build step.
+A small, open-source **manual Fortnite chest counter** from [LootCounter](https://lootcounter.com/). This GitHub repository contains a Fortnite chest counter you can download, run locally and adapt under the MIT license. No Epic login, extension, game files, API keys, telemetry or build step.
 
 This is a standalone personal counter, **not the source code of the hosted LootCounter application**. The hosted site includes separate squad rooms and session logs. This repository contains only independently written HTML, CSS and JavaScript for the standalone counter; it does not include a commercial template or its backend.
 
